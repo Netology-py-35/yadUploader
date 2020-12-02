@@ -1,11 +1,7 @@
-# https://cloud-api.yandex.net/v1/disk/resources/upload?path=tree.jpg&url=https%3A%2F%2Fcdn.pixabay.com%2Fphoto%2F2015%2F04%2F23%2F22%2F00%2Ftree-736885_1280.jpg
-from pprint import pprint
-
 import requests, os
 from dotenv import load_dotenv   #for python-dotenv method
 load_dotenv()
 
-url = 'https://cloud-api.yandex.net/v1/disk/resources/upload'
 TOKEN = os.environ.get('TOKEN')
 HEADERS = {"Authorization": f"OAuth {TOKEN}"}
 
