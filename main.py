@@ -17,7 +17,7 @@ class YaUploader:
 
     def get_upload_url(self, url, name):
         resp  = requests.get (url, headers=self.token, params={
-            'path': f'/public/{name}',
+            'path': f'/{name}',
             'overwrite': 'true'
         })
         resp.raise_for_status()
